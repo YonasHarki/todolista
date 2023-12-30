@@ -3,8 +3,13 @@ const todoList = [];
 function addTodo() {
   let inputElement = document.querySelector(".inputfield");
   let inputValue = inputElement.value;
-
-  todoList.push(inputValue);
+  let dateInput = document.getElementById("dateInput");
+  let selectedDate = dateInput.value;
+  let ob = {
+    name: `${inputValue}`,
+    dueDate: `${selectedDate}`,
+  };
+  todoList.push(ob);
   console.log(todoList);
 
   inputElement.value = "";
@@ -23,7 +28,7 @@ function renderTodos() {
   for (let i = 0; i < todoList.length; i++) {
     todoHTML += `
       <div class="todo-item">
-        ${todoList[i]}
+        ${todoList[i].name} , ${todoList[i].dueDate}
         <button onclick="deleteTodo(${i})" class="delete-button">
           Delete
         </button>
