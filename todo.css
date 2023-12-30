@@ -1,0 +1,12 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.todo-item {
+  margin-top: 15px;
+}
+
+button {
+  border: none;
+}
