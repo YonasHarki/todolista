@@ -27,9 +27,10 @@ function renderTodos() {
 
   for (let i = 0; i < todoList.length; i++) {
     todoHTML += `
-      <div class="todo-item">
-        ${todoList[i].name} , ${todoList[i].dueDate}
-        <button onclick="deleteTodo(${i})" class="delete-button">
+    <div class="todo-item">${todoList[i].name}</div>
+    <div class="todo-item">${todoList[i].dueDate}</div>
+      <div class="todo-item">  
+         <button onclick="deleteTodo(${i})" class="delete-button">
           Delete
         </button>
       </div>
@@ -38,3 +39,4 @@ function renderTodos() {
 
   document.querySelector(".div-todo").innerHTML = todoHTML;
 }
+
