@@ -5,8 +5,43 @@ body {
 
 .todo-item {
   margin-top: 15px;
+  font-size: 20px;
 }
 
 button {
   border: none;
+  cursor: pointer;
 }
+
+.title {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+}
+
+.delete-button {
+  background-color: rgb(148, 0, 0);
+  padding: 10px 28px 10px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.todo-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.name-input {
+  font-size: 15px;
+  padding: 5px;
+}
+
+.addtodobutton {
+  background-color: green;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
