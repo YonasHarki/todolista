@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="todo.css" />
   </head>
   <body>
-    <p>To do list</p>
-    <input class="inputfield" placeholder="To do name" />
-    <input id="dateInput" type="date" />
-    <button onclick="addTodo()">Add</button>
-    <div class="div-todo"></div>
+    <p class="title">To Do List</p>
+    <div class="todo-grid">
+      <input class="inputfield name-input" placeholder="To do name" />
+      <input id="dateInput" class="name-input" type="date" />
+      <button class="addtodobutton" onclick="addTodo()">Add</button>
+    </div>
+    <div class="div-todo todo-grid"></div>
     <script src="todo.js"></script>
   </body>
 </html>
+
 
